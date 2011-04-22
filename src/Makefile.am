@@ -1,36 +1,37 @@
-libexec_PROGRAMS = ibus-engine-xkb-layouts
+libexec_PROGRAMS = ibus-engine-zinnia
 
-ibus_engine_xkb_layouts_SOURCES = \
+ibus_engine_zinnia_SOURCES = \
 	main.c \
 	engine.c \
 	engine.h \
-	xkbutil.c \
-	xkbutil.h \
+	zinnia_component.c \
+	zinnia_component.h \
 	$(NULL)
-ibus_engine_xkb_layouts_CPPFLAGS = \
+ibus_engine_zinnia_CPPFLAGS = \
 	$(PREDEFINED_MACROS) \
 	$(NULL)
-ibus_engine_xkb_layouts_CFLAGS = \
+ibus_engine_zinnia_CFLAGS = \
 	@IBUS_CFLAGS@ \
 	$(NULL)
-ibus_engine_xkb_layouts_LDFLAGS = \
+ibus_engine_zinnia_LDFLAGS = \
 	@IBUS_LIBS@ \
+	-lzinnia \
 	$(NULL)
 
 component_DATA = \
-	xkb-layouts.xml \
+	zinnia.xml \
 	$(NULL)
 componentdir = @datadir@/ibus/component
 
 EXTRA_DIST = \
-	xkb-layouts.xml.in \
+	zinnia.xml.in \
 	$(NULL)
 
 CLEANFILES = \
-	xkb-layouts.xml \
+	zinnia.xml \
 	$(NULL)
 
-xkb-layouts.xml: xkb-layouts.xml.in
+zinnia.xml: zinnia.xml.in
 	$(AM_V_GEN) \
 	( \
 		libexecdir=${libexecdir}; \

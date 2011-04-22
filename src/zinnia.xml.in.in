@@ -1,0 +1,25 @@
+<?xml version=\"1.0\" encoding=\"utf-8\"?>
+<component>
+        <name>com.google.IBus.Zinnia</name>
+        <description>Zinnia hand-writing Component</description>
+        <exec>${libexecdir}/ibus-engine-zinnia --ibus</exec>
+        <version>@VERSION@</version>
+        <author>The Chromium OS Authors</author>
+        <license>Apache License 2.0</license>
+        <homepage>http://github.com/yusukes/ibus-zinnia</homepage>
+        <textdomain>ibus-zinnia</textdomain>
+	<engines>
+          <engine>
+            <name>ibus-zinnia-japanese</name>
+            <longname>Japanese hand-writing engine</longname>
+            <description>Japanese hand-writing engine</description>
+            <language>ja</language>
+            <license>Apache</license>
+            <author>The Chromium OS authors</author>
+            <icon></icon>
+            <layout>us</layout>
+            <hotkeys></hotkeys>
+            <rank>0</rank>
+          </engine>
+	</engines>
+</component>

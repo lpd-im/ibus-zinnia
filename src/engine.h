@@ -3,8 +3,8 @@
 
 #include <ibus.h>
 
-#define IBUS_TYPE_XKB_LAYOUT_ENGINE (ibus_xkb_layout_engine_get_type ())
+#define IBUS_TYPE_ZINNIA_ENGINE (ibus_zinnia_engine_get_type ())
 
-GType   ibus_xkb_layout_engine_get_type    (void);
+GType   ibus_zinnia_engine_get_type    (void);
 
 #endif
