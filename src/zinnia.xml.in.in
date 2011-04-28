@@ -10,7 +10,7 @@
         <textdomain>ibus-zinnia</textdomain>
 	<engines>
           <engine>
-            <name>ibus-zinnia-japanese</name>
+            <name>zinnia-japanese</name>
             <longname>Japanese hand-writing engine</longname>
             <description>Japanese hand-writing engine</description>
             <language>ja</language>

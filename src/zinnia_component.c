@@ -6,8 +6,8 @@ static IBusEngineDesc *
 ibus_zinnia_engine_new (void)
 {
     IBusEngineDesc *engine = NULL;
-    engine = ibus_engine_desc_new_varargs ("name", "ibus-zinnia-japanese-debug",
-                                           "longname", "Japanese hand-writing engine (Debug)",
+    engine = ibus_engine_desc_new_varargs ("name", "zinnia-japanese",
+                                           "longname", "Japanese hand-writing engine",
                                            "description", "Japanese hand-writing engine",
                                            "language", "ja",
                                            "license", "Apache",
