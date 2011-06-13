@@ -17,7 +17,7 @@
             <license>Apache</license>
             <author>The Chromium OS authors</author>
             <icon></icon>
-            <layout>us</layout>
+            <layout>handwriting-vk,us</layout>
             <hotkeys></hotkeys>
             <rank>0</rank>
           </engine>
