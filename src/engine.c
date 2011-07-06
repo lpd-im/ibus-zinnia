@@ -113,6 +113,7 @@ ibus_zinnia_engine_init (IBusZinniaEngine *zinnia)
 static void
 ibus_zinnia_engine_destroy (IBusZinniaEngine *zinnia)
 {
+    destroy_zinnia (zinnia);
     ((IBusObjectClass *) ibus_zinnia_engine_parent_class)->destroy ((IBusObject *) zinnia);
 }
 
